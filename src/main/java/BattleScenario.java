@@ -133,61 +133,6 @@ public class BattleScenario {
       * @return total damage output
       */
     public double calculateDamage(Attack pAttack, Mascotmon pAttacker, Mascotmon pDefender) {
-        double totalDamage = 0.0;
-
-        // type bonuses
-        if (pAttacker.type.equals("Water") && pDefender.type.equals("Fire")) {
-            pAttacker.typeBonus = 1.25;
-            pDefender.typeBonus = 0.75;
-        } else if (pAttacker.type.equals("Fire") && pDefender.type.equals("Water")) {
-            pAttacker.typeBonus = 0.75;
-            pDefender.typeBonus = 1.25;
-        }
-
-        if (pAttacker.type.equals("Fire") && pDefender.type.equals("Ground")) {
-            pAttacker.typeBonus = 1.25;
-            pDefender.typeBonus = 0.75;
-        } else if (pAttacker.type.equals("Ground") && pDefender.type.equals("Fire")) {
-            pAttacker.typeBonus = 0.75;
-            pDefender.typeBonus = 1.25;
-        }
-
-        if (pAttacker.type.equals("Ground") && pDefender.type.equals("Water")) {
-            pAttacker.typeBonus = 1.25;
-            pDefender.typeBonus = 0.75;
-        } else if (pAttacker.type.equals("Water") && pDefender.type.equals("Ground")) {
-            pAttacker.typeBonus = 0.75;
-            pDefender.typeBonus = 1.25;
-        }
-
-        // weather bonuses
-        if (this.battleWeather.GetBuffedType().equals(pAttacker.type)) {
-            pAttacker.weatherBonus = this.battleWeather.buffModifier;
-        } else if (this.battleWeather.getDebuffedType().equals(pAttacker.type)) {
-            pAttacker.weatherBonus = this.battleWeather.debuffModifier;
-        }
-
-        if (this.battleWeather.GetBuffedType().equals(pDefender.type)) {
-            pDefender.weatherBonus = this.battleWeather.buffModifier;
-        } else if (this.battleWeather.getDebuffedType().equals(pAttacker.type)) {
-            pDefender.weatherBonus = this.battleWeather.debuffModifier;
-        }
-
-        // damage boost if monster is same type
-        double damage = pAttack.damage;
-        if (pAttack.type.equals(pAttacker.type)) {
-            damage *= 1.2;
-        }
-
-        // calculates value if attack has no damage, positive damage, or negative damage
-        if (damage == 0.0) {
-            totalDamage = 0.0;
-        } else if (damage < 0.0) {
-            totalDamage = 1.0;
-        } else if (damage > 0.0){
-            totalDamage = (damage * pAttacker.weatherBonus * pAttacker.typeBonus) - (pDefender.stats.defense * pDefender.weatherBonus * pDefender.typeBonus);
-        }
-
-        return (double)Math.round(totalDamage);
+        return Math.round(pAttack.damage * 0.2);
     }
 }
