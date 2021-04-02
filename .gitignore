@@ -4,6 +4,10 @@
 *.lf
 *.hprof
 
+# My Hidden File Choices
+*.hprof
+/build/
+
 # Compiled class file
 *.class
 
