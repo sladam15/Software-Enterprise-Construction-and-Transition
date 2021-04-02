@@ -2,7 +2,10 @@
 .idea/
 *.iml
 *.lf
+
+# My Hidden File Choices
 *.hprof
+/build/
 
 # Compiled class file
 *.class
