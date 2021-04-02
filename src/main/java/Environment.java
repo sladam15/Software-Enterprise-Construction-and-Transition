@@ -25,19 +25,19 @@ public class Environment {
         this.buffModifier = 1.25;
         this.debuffModifier = 0.75;
         switch (weather){
-            case sunny:
+            case SUNNY:
                this.buffedType = "Fire";
                this.DebuffedType = "Water";
                break;
-            case rainy:
+            case RAINY:
                 this.buffedType = "Water";
                 this.DebuffedType = "Fire";
                 break;
-            case drought:
+            case DROUGHT:
                 this.buffedType = "Ground";
                 this.DebuffedType = "Normal";
                 break;
-            default:
+            case NEUTRAL:
                 this.buffedType = "";
                 this.DebuffedType = "";
                 break;
@@ -53,6 +53,6 @@ public class Environment {
     }
 
     public enum Weather {
-        sunny, rainy, drought, neutral
+        SUNNY, RAINY, DROUGHT, NEUTRAL
     }
 }
