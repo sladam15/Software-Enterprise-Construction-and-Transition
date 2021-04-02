@@ -133,8 +133,6 @@ public class BattleScenario {
       * @return total damage output
       */
     public double calculateDamage(Attack pAttack, Mascotmon pAttacker, Mascotmon pDefender) {
-        public double calculateDamage(Attack pAttack, Mascotmon pAttacker, Mascotmon pDefender) {
-
         double totalDamage = 0.0;
 
         // type bonuses
@@ -192,7 +190,4 @@ public class BattleScenario {
 
         return (double)Math.round(totalDamage);
     }
-}
-    }
-
 }
