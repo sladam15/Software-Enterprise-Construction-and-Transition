@@ -1,3 +1,10 @@
+/**
+ Class:	type.java
+
+ Description: This class classifies a certain type
+ to a monster of a specific name.
+ */
+
 public class type
 {
 

@@ -1,3 +1,10 @@
+/**
+ Class:	Description.java
+
+ Description: The following class gives monsters of a
+ certain name a description (nickname).
+ */
+
 public class Description {
 
     public String description;

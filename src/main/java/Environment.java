@@ -1,3 +1,13 @@
+/**
+ Class:	Environment.java
+
+ Description: The following class determines a particular
+ weather environment to account for when a fight occurs.
+ If a particular weather environment is present, it may
+ give certain buffs or debuffs to certain attacks and health,
+ depending on the monster type and other situations.
+ */
+
 public class Environment {
 
     Weather WEATHER;

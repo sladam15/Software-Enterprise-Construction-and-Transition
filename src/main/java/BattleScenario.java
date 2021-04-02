@@ -1,3 +1,12 @@
+/**
+ Class:	BattleScenario.java
+
+ Description: The following class begins a battle and displays
+ more results of a given battle between two monsters. Class
+ also determines if a monster has fainted and the program can
+ end. Class accounts for buff, debuffs, and weather environments.
+ */
+
 public class BattleScenario {
 
     Mascotmon mon1;

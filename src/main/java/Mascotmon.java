@@ -1,3 +1,12 @@
+/**
+ Class:	Mascotmon.java
+
+ Description: The following class gathers all the other classes
+ to be used in a Battle Scenario. It also displays the results
+ of each attack and the exact scenario if a certain attack is
+ chosen in a random generator.
+ */
+
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Mascotmon {
@@ -39,8 +48,6 @@ public class Mascotmon {
 
     public void getStats() {
         stats = new Stats(name);
-        
-        
     }
 
     public void getDescription() {

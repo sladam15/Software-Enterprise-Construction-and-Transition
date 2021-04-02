@@ -1,3 +1,11 @@
+/**
+ Class:	Stats.java
+
+ Description: The following class determines attributes of
+ attack, defense, and health given to particular monsters
+ of a particular name.
+ */
+
 public class Stats {
 
     double attack;

@@ -1,3 +1,13 @@
+/*
+  File:	Given
+  Author: Sean Adams; Code created by SER316 Professors
+  Date:	3/27/21
+
+  Description: The following class determines attributes of
+  attack, defense, and health given to particular monsters
+  of a particular name.
+*/
+
 public class Main {
     public static void main(String[] args) {
 
