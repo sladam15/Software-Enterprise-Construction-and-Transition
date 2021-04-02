@@ -17,7 +17,7 @@ public class Environment {
     double debuffModifier;
 
     public Environment(){
-        this(Weather.neutral);
+        this(Weather.NEUTRAL);
     }
 
     public Environment(Weather weather) {
