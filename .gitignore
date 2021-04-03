@@ -7,6 +7,8 @@
 # My Hidden File Choices
 *.hprof
 /build/
+*.bin
+*.lock
 
 # Compiled class file
 *.class
