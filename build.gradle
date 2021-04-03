@@ -27,7 +27,9 @@ repositories {
    }
 }
 
-
+test {
+	exclude '**/GivenBlackbox.class'
+	}
 
 ///////////////////////////////////////////////////////////////////////
 // Configure Checkstyle
