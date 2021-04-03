@@ -28,7 +28,7 @@ repositories {
 }
 
 test {
-	'**/GivenBlackBox.class'
+	exclude '**/GivenBlackBox.class'
 }
 
 
