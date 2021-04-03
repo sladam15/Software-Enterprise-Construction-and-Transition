@@ -4,12 +4,23 @@ public class Stats {
     double defense;
     double health;
 
+    /**
+     * Constructor assigns default statistics of attack, defense, and health to a given monster
+     * depending on the chosen name.
+     * May be duplicate code with default located below.
+     */
     public Stats() {
         attack = 50;
         defense = 50;
         health = 100;
     }
 
+    /**
+     * Method assigns statistics of attack, defense, and health to a given monster
+     * depending on the chosen name.
+     *
+     * You can assume that this method uses the values it is supposed to use and is correct. 
+     */
     public Stats(Mascotmon.Name name) {
         switch (name) {
             case ALBERT:
@@ -32,7 +43,10 @@ public class Stats {
                 defense = 40;
                 health = 110;
                 break;
+			default:
+                attack = 50;
+                defense = 50;
+                health = 100;
         }
-
     }
 }
