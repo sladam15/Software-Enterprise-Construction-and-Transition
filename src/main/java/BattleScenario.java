@@ -65,7 +65,7 @@ public class BattleScenario {
             System.out.println(damage1 + " damage dealt");
 
             //Adjust mon2's health:
-            mon2.stats.health = mon2.stats.health - damage1;
+            mon2.stats.health = mon2.stats.health + damage1;
             System.out.println(mon2.name + " has " + mon2.stats.health + " health left");
 
             //Battle terminating condition:
