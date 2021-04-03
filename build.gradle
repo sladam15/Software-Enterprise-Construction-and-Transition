@@ -27,6 +27,10 @@ repositories {
    }
 }
 
+test {
+	exclude '**/GivenBlackBox.class'
+}
+
 
 apply plugin: 'checkstyle'
 checkstyle {
