@@ -6,8 +6,6 @@
 # My Hidden File Choices
 *.hprof
 /build/
-*.lock
-*.bin
 
 # Compiled class file
 *.class
@@ -21,8 +19,11 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Gradle
+.gradle
+/build/
+
 # Package Files #
-*.gradle
 *.war
 *.nar
 *.ear
