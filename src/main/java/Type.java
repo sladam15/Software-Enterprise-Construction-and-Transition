@@ -17,6 +17,10 @@ public class Type {   //SER316 TASK 2 SPOTBUGS FIX
             type = "Ground";
         } else if (name.equals(Mascotmon.Name.SPARKY)) {
             type = "Fire";
+        } else if (name.equals(Mascotmon.Name.BLUE)) {
+            type = "Normal";
+        } else if (name.equals(Mascotmon.Name.PATTY)) {
+            type = "Water";
         } else {
             type = "Normal";
         }

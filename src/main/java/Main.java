@@ -11,6 +11,10 @@ public class Main {
         Mascotmon defender1 = new Mascotmon(Mascotmon.Name.ALBERT);
         Mascotmon attacker2 = new Mascotmon(Mascotmon.Name.BULLY);
         Mascotmon defender2 = new Mascotmon(Mascotmon.Name.RALPHIE);
+
+        // More adaptable code for Task 3.1
+        Mascotmon attacker3 = new Mascotmon(Mascotmon.Name.BLUE);
+        Mascotmon defender3 = new Mascotmon(Mascotmon.Name.PATTY);
         
         //Create First battle scenario with two mons
         BattleScenario fight1 = new BattleScenario(attacker1, defender1); 
@@ -26,6 +30,13 @@ public class Main {
         fight2.setEnvironment(Environment.Weather.rainy);
         //Initiate battle
         fight2.initiateBattle();
+        System.out.println("This is the end of the training simulation");
+
+
+        // Added code for Task 3.1
+        BattleScenario fight3 = new BattleScenario(attacker3, defender3);
+        fight3.setEnvironment(Environment.Weather.rainy);
+        fight3.initiateBattle();
         System.out.println("This is the end of the training simulation");
     }
 }

@@ -133,6 +133,40 @@ public class Mascotmon {
                     attack = new Attack(stats.attack, "Ground");
                 }
                 break;
+            case BLUE:
+                if (attackNumber == 0) {
+                    description = " uses Heat Up, increasing attack stat by 10%";
+                    stats.attack *= 1.10;
+                    attack = new Attack(0, "None");
+                } else if (attackNumber == 1) {
+                    description = " uses Inferno";
+                    attack = new Attack(stats.attack, "Fire");
+                } else if (attackNumber == 2) {
+                    description = " uses Headbutt";
+                    attack = new Attack(stats.attack, "Normal");
+                    System.out.println("Attack value: " + stats.attack);
+                } else {
+                    description = " uses Ember";
+                    attack = new Attack(stats.attack, "Fire");
+                }
+                break;
+            case PATTY:
+                if (attackNumber == 0) {
+                    description = " uses Heat Up, increasing attack stat by 10%";
+                    stats.attack *= 1.10;
+                    attack = new Attack(0, "None");
+                } else if (attackNumber == 1) {
+                    description = " uses Squirt Gun";
+                    attack = new Attack(stats.attack, "Water");
+                } else if (attackNumber == 2) {
+                    description = " uses Tidal Wave";
+                    attack = new Attack(stats.attack, "Water");
+                    System.out.println("Attack value: " + stats.attack);
+                } else {
+                    description = " uses Torpedo";
+                    attack = new Attack(stats.attack, "Water");
+                }
+                break;
             case BULLY:
                 if (attackNumber == 0) {
                     description = " uses Sleep, increasing health stat by 10%";
@@ -156,6 +190,6 @@ public class Mascotmon {
     }
 
     public enum Name {
-        ALBERT, RALPHIE, SPARKY, BULLY
+        ALBERT, RALPHIE, SPARKY, BULLY, BLUE, PATTY
     }
 }
